@@ -1,0 +1,35 @@
+/* Colors */
+$color1: #3a3a3a;
+$color2: #4d4d4d;
+$color3: #a8a8a8;
+$white: #fff;
+$black: #000;
+
+/* Backgrounds */
+$light-bg: #e4efff;
+$light-bg2: #f8f8f8;
+
+/* Font-sizes */
+$xxs: 1.2rem;
+$xs: 1.4rem;
+$sm: 1.8rem;
+$md: 2.5rem;
+$lg: 3.2rem;
+$xl: 6rem;
+
+/* Screen Sizes */
+$tablet: 992px;
+$mobile: 600px;
+
+/* Mixins */
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
