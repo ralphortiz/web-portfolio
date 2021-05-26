@@ -207,7 +207,7 @@ p {
           justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #home {
     min-height: auto;
   }
@@ -330,7 +330,7 @@ p {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .hero-bg {
     display: none;
   }
@@ -415,7 +415,7 @@ p {
           justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #project {
     min-height: auto;
   }
@@ -428,15 +428,12 @@ p {
 #project .project-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #project .project-wrapper .project-card {
@@ -450,37 +447,27 @@ p {
   background: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-radius: 1rem;
   padding: 2rem;
-  height: 250px;
+  height: 340px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   #project .project-wrapper .project-card {
-    height: 260px;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #project .project-wrapper .project-card {
+    height: 360px;
   }
 }
 
 #project .project-wrapper .project-card .project-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#project .project-wrapper .project-card .project-title a i {
-  cursor: pointer;
-  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 #project .project-wrapper .project-card .project-stacks {
-  margin-top: 0.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +484,17 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+#project .project-wrapper .project-card a {
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  border: 2px solid #3a3a3a;
+  background: transparent;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 /* Skill */

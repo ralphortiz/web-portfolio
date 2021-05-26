@@ -345,37 +345,31 @@ p {
 
   .project-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
     justify-content: center;
-    align-items: center;
 
     .project-card {
       display: flex;
       flex-direction: column;
       background: $white;
       box-shadow: none;
-      border-radius: 1rem;
       padding: 2rem;
-      height: 250px;
+      height: 340px;
+
+      @include tablet {
+        height: 340px;
+      }
 
       @include mobile {
-        height: 260px;
+        height: 360px;
       }
 
       .project-title {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        a i {
-          cursor: pointer;
-          font-size: 2rem;
-        }
+        margin-bottom: 1rem;
       }
 
       .project-stacks {
-        margin-top: 0.7rem;
         display: flex;
         align-items: center;
 
@@ -386,6 +380,16 @@ p {
 
       .project-body {
         flex-grow: 1;
+      }
+
+      a {
+        padding: 0.6rem 2rem;
+        cursor: pointer;
+        border: 2px solid $color1;
+        background: transparent;
+        border-radius: 5rem;
+        font-size: 1.4rem;
+        align-self: flex-end;
       }
     }
   }

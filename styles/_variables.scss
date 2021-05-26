@@ -8,6 +8,7 @@ $black: #000;
 /* Backgrounds */
 $light-bg: #e4efff;
 $light-bg2: #f8f8f8;
+$light-bg3: #a5c3f1;
 
 /* Font-sizes */
 $xxs: 1.2rem;
@@ -19,7 +20,7 @@ $xl: 6rem;
 
 /* Screen Sizes */
 $tablet: 992px;
-$mobile: 600px;
+$mobile: 500px;
 
 /* Mixins */
 @mixin tablet {
