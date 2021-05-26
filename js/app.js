@@ -46,3 +46,4 @@ $(document).on("click", 'a[href^="#"]', function (e) {
   var pos = $id.offset().top;
   $("body, html").animate({ scrollTop: pos });
 });
+
