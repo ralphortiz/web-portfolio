@@ -341,10 +341,10 @@ p {
       background: white;
       border-radius: 10px;
       padding: 2rem;
-      height: 320px;
+      height: 355px;
 
       @include mobile {
-        height: 310px;
+        height: 325px;
       }
 
       .project-title {
