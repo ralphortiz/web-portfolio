@@ -104,7 +104,7 @@ p {
 }
 
 .navbar .nav-container span svg {
-  width: clamp(40px, 5vw, 60px);
+  width: clamp(40px, 5vw, 50px);
 }
 
 .navbar .nav-container .nav-links {
