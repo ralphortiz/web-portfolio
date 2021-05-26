@@ -15,11 +15,6 @@
   src: url("../fonts/sfprobold.ttf");
 }
 
-@font-face {
-  font-family: karasuma;
-  src: url("../fonts/karasuma.otf");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -57,9 +52,7 @@ h3,
 h4,
 button,
 a,
-ul,
-figcaption,
-blockquote p {
+ul {
   font-family: "sfsemb", sans-serif;
   font-weight: normal;
   line-height: 1.1;
@@ -101,13 +94,6 @@ p {
 
       a {
         margin: 0 2rem;
-      }
-
-      li:last-child {
-        border: 2px solid $color1;
-        padding: 0.5rem 0;
-        margin-left: 1rem;
-        border-radius: 5rem;
       }
     }
 
@@ -352,17 +338,13 @@ p {
     .project-card {
       display: flex;
       flex-direction: column;
-      background: $white;
-      box-shadow: none;
+      background: white;
+      border-radius: 10px;
       padding: 2rem;
-      height: 340px;
-
-      @include tablet {
-        height: 340px;
-      }
+      height: 320px;
 
       @include mobile {
-        height: 360px;
+        height: 310px;
       }
 
       .project-title {
@@ -370,25 +352,20 @@ p {
       }
 
       .project-stacks {
+        margin-bottom: 2rem;
         display: flex;
         align-items: center;
 
         li {
-          margin-right: 1.5rem;
+          margin-right: 1.2rem;
         }
       }
 
-      .project-body {
+      .project-info {
         flex-grow: 1;
       }
 
-      a {
-        padding: 0.6rem 2rem;
-        cursor: pointer;
-        border: 2px solid $color1;
-        background: transparent;
-        border-radius: 5rem;
-        font-size: 1.4rem;
+      .project-link {
         align-self: flex-end;
       }
     }
@@ -444,16 +421,21 @@ footer {
   .social-links {
     margin-bottom: 1.5rem;
 
-    i {
+    .link i {
       padding: 0.5rem 1.6rem;
       margin: 0 0.5rem;
-      color: $color3;
+      color: $color2;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: $color1;
+      }
     }
   }
 
   h4 {
-    font-size: 1.3rem;
-    color: $color3;
+    font-size: 1.2rem;
+    color: $color2;
   }
 }
 
@@ -469,20 +451,21 @@ footer {
 }
 
 /* Buttons */
-.btn {
-  padding: 0.8rem 4rem;
+.btn-primary {
+  padding: 0.8rem 1.6rem;
   cursor: pointer;
   border: 2px solid $color1;
-  background: transparent;
-  border-radius: 5rem;
-  font-size: 1.4rem;
+  border-radius: 1.6rem;
+  font-size: $xs;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: $color1;
+    color: white;
+  }
 }
 
 /* Text sizes */
-.ft {
-  font-size: $xxs;
-}
-
 .xs {
   font-size: $xs;
 }
